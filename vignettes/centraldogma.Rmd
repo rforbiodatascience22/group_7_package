@@ -1,3 +1,9 @@
+---
+output:
+  pdf_document: default
+  rmarkdown::html_vignette: default
+  html_document: default
+---
 
 
 #Week 8 Group Assignment
@@ -5,17 +11,24 @@
 
 Github link- https://github.com/rforbiodatascience22/group_7_package
 
+---
+title: "centraldogma"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{centraldogma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
-```{r}
-githubinstall("rforbiodatascience22/group_7_package")
-```
 
 ```{r setup}
+library("githubinstall")
+githubinstall("centraldogma")
 library("centraldogma")
 ```
 #Instruction manual for centraldogma package
