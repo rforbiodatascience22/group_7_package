@@ -1,17 +1,18 @@
----
-title: "centraldogma"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{centraldogma}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
+
+
+#Week 8 Group Assignment
+##Members - Anna Miotto, Dimitrios Loukas, Federica Rapelli, Paolo Federico, Siddhi Jain
+
+Github link- https://github.com/rforbiodatascience22/group_7_package
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+```
+```{r}
+githubinstall("rforbiodatascience22/group_7_package")
 ```
 
 ```{r setup}
@@ -25,7 +26,52 @@ It is consists of 5 main functions which are briefly described below:
 ##Function 1 (generate_random_seq)
 This function generates a random sequence of the specified length with replacement from the nucleotides "A","T","G" and "C"
 ```{r}
-gener
+#generating a random sequence of length 10
+generate_random_seq(10)
 ```
+```{r}
+#generating a random sequence of length 50
+generate_random_seq(50)
+```
+##Function 2 (transcription)
+This function converts a DNA sequence to an RNA sequence
+```{r}
+#This function replaces "T" with "U" to give an RNA sequence
+transcription("ATTGGCCTGC")
+```
+##Function 3 (creating_codons)
+This function is _supposed_ to give the user a list of codons generated from the input RNA string
+```{r}
+creating_codons("AUUGGA")
+#The output is supposed to be a list of codons
+```
+##Function 4 (translation)
+This function converts the list of codons to a sequence of amino acids
+```{r}
+#This takes a list of codons as input and converts them to amino acids
+translation(c("AAG","CCU","UUU","GGG","UGC","UAC","UUU","CCU"))
+```
+##Function 5 (amino_acid_occurrance)
+This function takes a sequence of amino acids as input and creates a histogram of the occurrance of the respective amino acids
+```{r}
+amino_acid_occurance("KPFGCYFP")
+```
+#Discussions from Task 4
+
+##The person(s) responsible for function five, describe how you added the three packages as dependencies and included the pipe in the package namespace
+We tried adding the packages using usethis::use_package("packageName") for each package, but this gave us a "duplicates" error.
+Instead we added the packages like so:
+usethis: :use_package("usethis"), use_package("magrittr"),use_package("ggplot2"),use_package("tidyverse"),use_package("tidy")
+without repeating "usethis" more than once.
+
+##Discuss why it is a good idea to limit the number of dependencies your package has. When can it not be avoided?
+We should try to limit the number of dependencies because it increases the computational time for loading and processing the package. It can not be avoided when we are using functions similar to the ones that already exist, and also when you are performing a specific task which requires exactly the functions present in an existing package. For example-the package "usethis" is necessary to loading package functions without importing them.
+
+##Discuss the difference between adding an @importFrom package function tag to a function description compared to using package::function()
+When we use @import, we only import the package for the function we have written it in. And using package::function() in the DESCRIPTION file allows the package to be used in all the functions without repeated importing.
+
+
+
+
 
 

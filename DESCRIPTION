@@ -1,10 +1,8 @@
 Package: centraldogma
 Title: DNA to protein translation
 Version: 0.0.0.9000
-Authors@R: Siddhi, Dimitri, Anna, Fede, Paolo
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Author: person("First")
+Description: A package for the central dogma.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
