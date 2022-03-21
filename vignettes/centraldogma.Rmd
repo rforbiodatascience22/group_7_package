@@ -1,0 +1,31 @@
+---
+title: "centraldogma"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{centraldogma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library("centraldogma")
+```
+#Instruction manual for centraldogma package
+This package is designed for converting DNA sequences to RNA sequences, and also to Amino acid sequence. It also allows the user to plot a histogram of the occurrence of amino acids in the given sequence. 
+
+It is consists of 5 main functions which are briefly described below:
+
+##Function 1 (generate_random_seq)
+This function generates a random sequence of the specified length with replacement from the nucleotides "A","T","G" and "C"
+```{r}
+gener
+```
+
+

@@ -4,7 +4,7 @@
 \alias{generate_random_seq}
 \title{Generating random DNA sequence}
 \usage{
-generate_random_seq(DNA_seq)
+generate_random_seq(size)
 }
 \arguments{
 \item{DNA_seq}{}
