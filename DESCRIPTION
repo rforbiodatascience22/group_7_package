@@ -12,4 +12,4 @@ RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-usethis::use_package("usethis")
+usethis::use_package("usethis"), use_package("magrittr"),use_package("ggplot2"),use_package("tidyverse"),use_package("tidy")
