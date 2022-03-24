@@ -1,8 +1,8 @@
 ---
 title: "vignette_final"
 output:
-  rmarkdown::html_vignette: default
   rmarkdown::pdf_document: default
+  rmarkdown::html_vignette: default
 vignette: |
   %\VignetteIndexEntry{vignette_final} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
