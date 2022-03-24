@@ -27,8 +27,6 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library("githubinstall")
-githubinstall("centraldogma")
 library("centraldogma")
 ```
 #Instruction manual for centraldogma package
