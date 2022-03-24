@@ -9,3 +9,4 @@
 ^centraldogma.*\.tgz$
 ^doc$
 ^Meta$
+^README\.Rmd$
