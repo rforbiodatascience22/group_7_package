@@ -1,9 +1,12 @@
 ---
+title: "centraldogma"
 output:
   pdf_document: default
-  rmarkdown::html_vignette: default
-  html_document: default
+  rmarkdown::pdf_document: default
+vignette: |
+  %\VignetteIndexEntry{vignette} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
+
 
 
 #Week 8 Group Assignment
@@ -13,7 +16,7 @@ Github link- https://github.com/rforbiodatascience22/group_7_package
 
 ---
 title: "centraldogma"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{centraldogma}
   %\VignetteEngine{knitr::rmarkdown}
@@ -62,10 +65,10 @@ This function converts the list of codons to a sequence of amino acids
 #This takes a list of codons as input and converts them to amino acids
 translation(c("AAG","CCU","UUU","GGG","UGC","UAC","UUU","CCU"))
 ```
-##Function 5 (amino_acid_occurrance)
+##Function 5 (amino_acid_occurance)
 This function takes a sequence of amino acids as input and creates a histogram of the occurrance of the respective amino acids
 ```{r}
-amino_acid_occurance("KPFGCYFP")
+#occurance("KPFGCYFP")
 ```
 #Discussions from Task 4
 

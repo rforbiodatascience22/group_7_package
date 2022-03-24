@@ -7,6 +7,6 @@
 #'
 #' @examples
 translation <- function(codons){
-  codons_concat <- paste0(conversion_table[codons], collapse = "")
+  codons_concat <- paste0(conv_table[codons], collapse = "")
   return(codons_concat)
 }
