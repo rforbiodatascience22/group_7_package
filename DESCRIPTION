@@ -1,7 +1,7 @@
 Package: centraldogma
 Title: DNA to protein translation
 Version: 0.0.0.9000
-Author: person("First")
+Author: person("Group 7")
 Description: A package for the central dogma.
 License: MIT + file LICENSE
 Encoding: UTF-8

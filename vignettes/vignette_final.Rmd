@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD:vignettes/centraldogma.Rmd
 output:
   pdf_document: default
   html_document: default
@@ -9,6 +10,15 @@ output:
 ## Members - Anna Miotto, Dimitrios Loukas, Federica Rapelli, Paolo Federico, Siddhi Jain
 
 Github link- https://github.com/rforbiodatascience22/group_7_package
+=======
+title: "vignette_final"
+output:
+  rmarkdown::html_vignette: default
+  rmarkdown::pdf_document: default
+vignette: |
+  %\VignetteIndexEntry{vignette_final} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
+---
+>>>>>>> 2346518a8c01e59ed0c22d862a508bad760932e1:vignettes/vignette_final.Rmd
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -16,6 +26,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+<<<<<<< HEAD:vignettes/centraldogma.Rmd
 ```{r}
 library(githubinstall)
 githubinstall("rforbiodatascience22/group_7_package")
@@ -25,6 +36,19 @@ githubinstall("rforbiodatascience22/group_7_package")
 devtools::load_all()
 ```
 # Instruction manual for centraldogma package
+=======
+
+```{r setup}
+library(centraldogma)
+```
+
+#Week 8 Group Assignment
+##Members - Anna Miotto, Dimitrios Loukas, Federica Rapelli, Paolo Federico, Siddhi Jain
+
+Github link- https://github.com/rforbiodatascience22/group_7_package
+
+#Instruction manual for centraldogma package
+>>>>>>> 2346518a8c01e59ed0c22d862a508bad760932e1:vignettes/vignette_final.Rmd
 This package is designed for converting DNA sequences to RNA sequences, and also to Amino acid sequence. It also allows the user to plot a histogram of the occurrence of amino acids in the given sequence. 
 
 It is consists of 5 main functions which are briefly described below:
@@ -57,7 +81,11 @@ This function converts the list of codons to a sequence of amino acids
 #This takes a list of codons as input and converts them to amino acids
 translation(c("AAG","CCU","UUU","GGG","UGC","UAC","UUU","CCU"))
 ```
+<<<<<<< HEAD:vignettes/centraldogma.Rmd
 ## Function 5 (amino_acid_occurrance)
+=======
+##Function 5 (amino_acid_occurance)
+>>>>>>> 2346518a8c01e59ed0c22d862a508bad760932e1:vignettes/vignette_final.Rmd
 This function takes a sequence of amino acids as input and creates a histogram of the occurrance of the respective amino acids
 ```{r}
 amino_acid_occurance("KPFGCYFP")
@@ -75,9 +103,6 @@ We should try to limit the number of dependencies because it increases the compu
 
 ## Discuss the difference between adding an @importFrom package function tag to a function description compared to using package::function()
 When we use @import, we only import the package for the function we have written it in. And using package::function() in the DESCRIPTION file allows the package to be used in all the functions without repeated importing.
-
-
-
 
 
 
