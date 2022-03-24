@@ -2,7 +2,6 @@
 title: "vignette_final"
 output:
   rmarkdown::pdf_document: default
-  rmarkdown::html_vignette: default
 vignette: |
   %\VignetteIndexEntry{vignette_final} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
@@ -18,12 +17,12 @@ knitr::opts_chunk$set(
 devtools::load_all()
 ```
 
-#Week 8 Group Assignment
-##Members - Anna Miotto, Dimitrios Loukas, Federica Rapelli, Paolo Federico, Siddhi Jain
+# Week 8 Group Assignment
+## Members - Anna Miotto, Dimitrios Loukas, Federica Rapelli, Paolo Federico, Siddhi Jain
 
 Github link- https://github.com/rforbiodatascience22/group_7_package
 
-#Instruction manual for centraldogma package
+# Instruction manual for centraldogma package
 This package is designed for converting DNA sequences to RNA sequences, and also to Amino acid sequence. It also allows the user to plot a histogram of the occurrence of amino acids in the given sequence. 
 
 It is consists of 5 main functions which are briefly described below:
@@ -45,7 +44,7 @@ This function converts a DNA sequence to an RNA sequence
 transcription("ATTGGCCTGC")
 ```
 ## Function 3 (creating_codons)
-This function is _supposed_ to give the user a list of codons generated from the input RNA string
+This function gives the user a list of codons generated from the input RNA string
 ```{r}
 creating_codons("AUUGGA")
 #The output is supposed to be a list of codons
